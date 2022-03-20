@@ -2,6 +2,6 @@
 
 ### To test examples
 
-> cd tests
+> cd tests  
 > php BinarySumTests.php
-> 
+
