@@ -3,11 +3,13 @@ declare(strict_types=1);
 
 namespace Trials;
 
-function isPowerOfThree (int $int): bool
+function isPowerOfThree(int $int): bool
 {
     if ($int === 0) {
         return false;
-    } elseif ($int === 1) {
+    }
+
+    if ($int === 1 || $int === -1) {
         return true;
     }
 

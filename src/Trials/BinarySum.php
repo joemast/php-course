@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace Trials;
 
-function binarySum (string $arg1, string $arg2): string
+function binarySum(string $arg1, string $arg2): string
 {
     $arg1 = trim($arg1);
     $arg2 = trim($arg2);
