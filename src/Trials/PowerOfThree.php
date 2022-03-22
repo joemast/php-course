@@ -3,6 +3,10 @@ declare(strict_types=1);
 
 namespace Trials;
 
+/**
+ * @param int $int - it can also be a negative integer
+ * @return bool
+ */
 function isPowerOfThree(int $int): bool
 {
     if ($int === 0) {
