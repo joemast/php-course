@@ -5,8 +5,9 @@ namespace Tests;
 
 require_once '../src/Trials/BinarySum.php';
 
-var_dump(\Trials\binarySum('10', '01'));
-var_dump(\Trials\binarySum(' 111', '01 '));
-var_dump(\Trials\binarySum('01', '01'));
-var_dump(\Trials\binarySum(' 1a1', '01 '));
+$binSumObj = new \Trials\BinarySum();
+var_dump($binSumObj->binarySum('10', '01'));
+var_dump($binSumObj->binarySum(' 111', '01 '));
+var_dump($binSumObj->binarySum('01', '01'));
+var_dump($binSumObj->binarySum(' 1a1', '01 '));
 
