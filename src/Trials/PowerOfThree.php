@@ -3,8 +3,8 @@ declare(strict_types=1);
 
 namespace Trials;
 
-class PowerOfThree {
-
+class PowerOfThree
+{
     /**
      * @param int $int - it can also be a negative integer
      * @return bool
@@ -32,5 +32,4 @@ class PowerOfThree {
 
         return ($int < 0 && !$poTisEven && $isPoT) || ($int > 0 && $isPoT);
     }
-
 }

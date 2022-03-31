@@ -3,8 +3,8 @@ declare(strict_types=1);
 
 namespace Trials;
 
-class BinarySum {
-
+class BinarySum
+{
     public function binarySum(string $arg1, string $arg2): string
     {
         $arg1 = trim($arg1);
@@ -12,5 +12,4 @@ class BinarySum {
 
         return decbin(bindec($arg1) + bindec($arg2));
     }
-
 }

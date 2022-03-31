@@ -3,8 +3,8 @@ declare(strict_types=1);
 
 namespace Trials;
 
-class Fibonacci {
-
+class Fibonacci
+{
     public function fib(int $num): int
     {
         if ($num === 0) {
@@ -16,5 +16,4 @@ class Fibonacci {
 
         return $this->fib($num - 1) + $this->fib($num - 2);
     }
-
 }
