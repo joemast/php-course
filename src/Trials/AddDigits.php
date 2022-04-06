@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace Trials;
@@ -28,8 +29,8 @@ class AddDigits
         $digitsCount = strlen((string)$number);
         $res = 0;
         for ($i = 0; $i < $digitsCount; ++$i) {
-            $res += $number%10;
-            $number = (int)($number/10);
+            $res += $number % 10;
+            $number = (int)($number / 10);
         }
 
         return $this->addDigitsUsingTenDivision($res);

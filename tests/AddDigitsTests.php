@@ -1,11 +1,14 @@
 <?php
+
 declare(strict_types=1);
 
 namespace Tests;
 
-require_once '../src/Trials/AddDigits.php';
+require __DIR__ . '/../vendor/autoload.php';
 
-$addDigitsObj = new \Trials\AddDigits();
+use Trials\AddDigits;
+
+$addDigitsObj = new AddDigits();
 var_dump($addDigitsObj->addDigitsUsingStringConversion(0));
 var_dump($addDigitsObj->addDigitsUsingStringConversion(1));
 var_dump($addDigitsObj->addDigitsUsingStringConversion(9));

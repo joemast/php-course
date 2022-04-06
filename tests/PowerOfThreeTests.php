@@ -1,11 +1,14 @@
 <?php
+
 declare(strict_types=1);
 
 namespace Tests;
 
-require_once '../src/Trials/PowerOfThree.php';
+require __DIR__ . '/../vendor/autoload.php';
 
-$powerObj = new \Trials\PowerOfThree();
+use Trials\PowerOfThree;
+
+$powerObj = new PowerOfThree();
 var_dump($powerObj->isPowerOfThree(1));
 var_dump($powerObj->isPowerOfThree(-1));
 var_dump($powerObj->isPowerOfThree(3));
