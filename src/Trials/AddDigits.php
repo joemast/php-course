@@ -13,10 +13,8 @@ class AddDigits
         }
 
         $numArray = array_map('intval', str_split((string)$number));
-        $res = 0;
-        foreach ($numArray as $digit) {
-            $res += $digit;
-        }
+        $res = array_sum($numArray);
+
         return $this->addDigitsUsingStringConversion($res);
     }
 
