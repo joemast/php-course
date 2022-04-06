@@ -6,7 +6,7 @@ namespace Tests;
 
 require __DIR__ . '/../vendor/autoload.php';
 
-use Trials\Fibonacci;
+use PHPCourse\Trials\Fibonacci;
 
 $fibObj = new Fibonacci();
 var_dump($fibObj->fib(0));

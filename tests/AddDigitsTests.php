@@ -6,7 +6,7 @@ namespace Tests;
 
 require __DIR__ . '/../vendor/autoload.php';
 
-use Trials\AddDigits;
+use PHPCourse\Trials\AddDigits;
 
 $addDigitsObj = new AddDigits();
 var_dump($addDigitsObj->addDigitsUsingStringConversion(0));

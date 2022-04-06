@@ -6,7 +6,7 @@ namespace Tests;
 
 require __DIR__ . '/../vendor/autoload.php';
 
-use Trials\BinarySum;
+use PHPCourse\Trials\BinarySum;
 
 $binSumObj = new BinarySum();
 var_dump($binSumObj->binarySum('10', '01'));

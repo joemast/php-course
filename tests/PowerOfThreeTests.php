@@ -6,7 +6,7 @@ namespace Tests;
 
 require __DIR__ . '/../vendor/autoload.php';
 
-use Trials\PowerOfThree;
+use PHPCourse\Trials\PowerOfThree;
 
 $powerObj = new PowerOfThree();
 var_dump($powerObj->isPowerOfThree(1));

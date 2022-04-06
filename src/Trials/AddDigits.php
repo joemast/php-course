@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Trials;
+namespace PHPCourse\Trials;
 
 class AddDigits
 {
