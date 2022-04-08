@@ -1,0 +1,25 @@
+{
+    "name": "atarankov/php-course",
+    "description": "PHP course tasks",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "PHPCourse\\": "src/",
+            "Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alexander Tarankov",
+            "email": "atarankov@plesk.com"
+        }
+    ],
+    "require": {
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "*"
+    },
+    "scripts": {
+        "lint": "vendor/bin/phpcs --standard=PSR1,PSR12,Zend --warning-severity=0 --ignore=vendor ."
+    }
+}
