@@ -8,6 +8,10 @@ class AddDigits
 {
     public function addDigitsUsingStringConversion(int $number): int
     {
+        if ($number < 0) {
+            throw new \InvalidArgumentException('Only positive integer numbers allowed');
+        }
+
         if ($number < 10) {
             return $number;
         }
@@ -20,6 +24,10 @@ class AddDigits
 
     public function addDigitsUsingTenDivision(int $number): int
     {
+        if ($number < 0) {
+            throw new \InvalidArgumentException('Only positive integer numbers allowed');
+        }
+
         if ($number < 10) {
             return $number;
         }

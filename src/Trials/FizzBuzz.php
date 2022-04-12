@@ -21,29 +21,34 @@ class FizzBuzz
         return $this->isDiv3($num) && $this->isDiv5($num);
     }
 
-    public function doFizzBuzz(int $begin, int $end): void
+    public function fizzBuzz(int $begin, int $end): void
+    {
+        print $this->fizzBuzzString($begin, $end);
+    }
+
+    public function fizzBuzzString(int $begin, int $end): string
     {
         if ($begin > $end) {
-            return;
+            return '';
         }
 
+        $result = [];
         foreach (range($begin, $end) as $item) {
             switch ($item) {
                 case ($this->isDiv3and5($item)):
-                    print "FizzBuzz";
+                    $result[] = "FizzBuzz";
                     break;
                 case ($this->isDiv3($item)):
-                    print "Fizz";
+                    $result[] = "Fizz";
                     break;
                 case ($this->isDiv5($item)):
-                    print "Buzz";
+                    $result[] = "Buzz";
                     break;
                 default:
-                    print $item;
+                    $result[] = $item;
             }
-            print " ";
         }
 
-        print PHP_EOL;
+        return implode(' ', $result);
     }
 }
