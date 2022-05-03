@@ -33,14 +33,14 @@ class AddDigitsTest extends TestCase
             [10, 1],
             [128, 2],
             [919, 1],
-            [1789, 7]
+            [1789, 7],
         ];
     }
 
     /**
      * @dataProvider addDigitsDataProvider
      */
-    public function testAddDigitsUsingTenDivision($number, $expected): void
+    public function testAddDigitsUsingTenDivision(int $number, int $expected): void
     {
         $result = (new AddDigits())->addDigitsUsingTenDivision($number);
         $this->assertEquals($expected, $result);
@@ -49,7 +49,7 @@ class AddDigitsTest extends TestCase
     /**
      * @dataProvider addDigitsDataProvider
      */
-    public function testAddDigitsUsingStringConversion($number, $expected): void
+    public function testAddDigitsUsingStringConversion(int $number, int $expected): void
     {
         $result = (new AddDigits())->addDigitsUsingStringConversion($number);
         $this->assertEquals($expected, $result);

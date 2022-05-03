@@ -18,7 +18,7 @@ class BalancedBracketsTest extends TestCase
             [')', false],
             ['()()', true],
             ['(((())))', true],
-            ['((((()()))))', true]
+            ['((((()()))))', true],
         ];
     }
 

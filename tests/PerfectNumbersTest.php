@@ -40,7 +40,7 @@ class PerfectNumbersTest extends TestCase
      */
     public function testNumberIsPerfectUsingArray(int $number, bool $expected): void
     {
-        $result = (new PerfectNumbers())->isPerfect($number);
+        $result = (new PerfectNumbers())->isPerfectUsingArray($number);
 
         $this->assertEquals($expected, $result);
     }

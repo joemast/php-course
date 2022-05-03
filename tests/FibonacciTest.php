@@ -16,7 +16,7 @@ class FibonacciTest extends TestCase
             [1, 1],
             [2, 1],
             [5, 5],
-            [8, 21]
+            [8, 21],
         ];
     }
 
@@ -35,7 +35,7 @@ class FibonacciTest extends TestCase
     {
         return [
             [-1],
-            [11]
+            [11],
         ];
     }
 

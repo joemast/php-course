@@ -6,21 +6,6 @@ namespace PHPCourse\Trials;
 
 class FizzBuzz
 {
-    private function isDiv5(int $num): bool
-    {
-        return $num % 5 === 0;
-    }
-
-    private function isDiv3(int $num): bool
-    {
-        return $num % 3 === 0;
-    }
-
-    private function isDiv3and5(int $num): bool
-    {
-        return $this->isDiv3($num) && $this->isDiv5($num);
-    }
-
     public function fizzBuzz(int $begin, int $end): void
     {
         print $this->fizzBuzzString($begin, $end);
@@ -50,5 +35,20 @@ class FizzBuzz
         }
 
         return implode(' ', $result);
+    }
+
+    private function isDiv5(int $num): bool
+    {
+        return $num % 5 === 0;
+    }
+
+    private function isDiv3(int $num): bool
+    {
+        return $num % 3 === 0;
+    }
+
+    private function isDiv3and5(int $num): bool
+    {
+        return $this->isDiv3($num) && $this->isDiv5($num);
     }
 }

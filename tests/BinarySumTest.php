@@ -13,7 +13,7 @@ class BinarySumTest extends TestCase
     {
         return [
             'Successful scenario' => ['10', '01', '11'],
-            'Args with leading/trailing spaces' => [' 111', '01 ', '1000']
+            'Args with leading/trailing spaces' => [' 111', '01 ', '1000'],
         ];
     }
 
