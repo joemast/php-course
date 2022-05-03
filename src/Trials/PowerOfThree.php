@@ -16,7 +16,7 @@ class PowerOfThree
             return false;
         }
 
-        if ($int === 1 || $int === -1) {
+        if (abs($int) === 1) {
             return true;
         }
 

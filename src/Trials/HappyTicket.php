@@ -17,8 +17,7 @@ class HappyTicket
         }
 
         // make sure ticket contains only digits
-        $regex = '/^\d*$/';
-        if (!preg_match($regex, $ticket)) {
+        if (!preg_match('/^\d*$/', $ticket)) {
             return false;
         }
 
