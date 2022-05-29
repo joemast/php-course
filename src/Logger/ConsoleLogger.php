@@ -8,6 +8,6 @@ class ConsoleLogger extends AbstractLogger
 {
     protected function log(string $message): void
     {
-        print($message);
+        print($message . PHP_EOL);
     }
 }

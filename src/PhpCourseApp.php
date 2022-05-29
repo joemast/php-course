@@ -10,16 +10,16 @@ use PHPCourse\Trials\BinarySum;
 
 class PhpCourseApp
 {
-    private LoggerInterface $_logger;
+    private LoggerInterface $logger;
 
     public function __construct(array $config)
     {
-        $this->_logger = $config['logger'];
+        $this->logger = $config['logger'];
     }
 
     public function run(): void
     {
         (new AddDigits())->addDigitsUsingStringConversion(123);
-        (new BinarySum($this->_logger))->binarySum('11', '11');
+        (new BinarySum($this->logger))->binarySum('11', '11');
     }
 }

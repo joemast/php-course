@@ -6,15 +6,15 @@ namespace PHPCourse\Logger;
 
 class FileLogger extends AbstractLogger
 {
-    private string $_logFileName;
+    private string $logFileName;
 
     public function __construct(string $fileName = 'phpcourse.log')
     {
-        $this->_logFileName = $fileName;
+        $this->logFileName = $fileName;
     }
 
     protected function log(string $message): void
     {
-        file_put_contents($this->_logFileName, $message . PHP_EOL, FILE_APPEND);
+        file_put_contents($this->logFileName, $message . PHP_EOL, FILE_APPEND);
     }
 }
