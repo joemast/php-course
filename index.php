@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 require_once "vendor/autoload.php";
 
-use PHPCourse\Logger\FileLogger;
+use PHPCourse\Logger\LoggerFactory;
 use PHPCourse\PhpCourseApp;
 
 $config = require "config.php";
-$config['logger'] = new FileLogger();
+$logger = LoggerFactory::getLogger($config);
 
-(new PhpCourseApp($config))->run();
+(new PhpCourseApp($logger))->run();

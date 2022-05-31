@@ -12,9 +12,9 @@ class PhpCourseApp
 {
     private LoggerInterface $logger;
 
-    public function __construct(array $config)
+    public function __construct(LoggerInterface $logger)
     {
-        $this->logger = $config['logger'];
+        $this->logger = $logger;
     }
 
     public function run(): void

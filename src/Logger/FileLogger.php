@@ -8,8 +8,11 @@ class FileLogger extends AbstractLogger
 {
     private string $logFileName;
 
-    public function __construct(string $fileName = 'phpcourse.log')
+    public function __construct(?string $fileName = 'phpcourse.log')
     {
+        if (empty($fileName)) {
+            $fileName = 'phpcourse.log';
+        }
         $this->logFileName = $fileName;
     }
 
