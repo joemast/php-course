@@ -2,7 +2,7 @@
 
 ### To run lint
 
-> composer test
+> composer lint
 
 ### To run tests
 
