@@ -10,5 +10,5 @@
 
 ### To run application
 
-> cp config.php.tmpl config.php
+> cp config.php.tmpl config.php   
 > php index.php
