@@ -1,7 +1,14 @@
 # php-course
 
-### To test examples
+### To run lint
 
-> cd tests  
-> php BinarySumTests.php
+> composer test
 
+### To run tests
+
+> composer test
+
+### To run application
+
+> cp config.php.tmpl config.php
+> php index.php
