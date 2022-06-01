@@ -21,7 +21,7 @@
         "phpunit/phpunit": "^9"
     },
     "scripts": {
-        "lint": "vendor/bin/phpcs --standard=PSR1,PSR12,Zend --warning-severity=0 --ignore=vendor .",
+        "lint": "vendor/bin/phpcs --standard=PSR1,PSR12 --warning-severity=0 --ignore=vendor .",
         "test": "vendor/bin/phpunit"
     }
 }
